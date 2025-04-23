@@ -4,6 +4,7 @@ From a business perspective, the Used Car Dealership aims to identify the key fa
 * Improve Decision-Making: Source high-demand vehicles using data
 * Understand Customer Preferences: Learn what buyers value most
 * Enhance Profitability: Reduce pricing errors and align with market demand
+
 Objective
 Develop machine learning models that predict used car prices and surface key pricing drivers based on historical vehicle and sales data.
 
@@ -13,11 +14,11 @@ Technical Approach:
 * Used techniques like feature selection, scaling, and regularization (Lasso & Ridge)
 
 Model Performance Summary
-Model	                      RMSE ($)	R² Score	  Notes
-Ridge Regression (α=100)	  5,965.13	0.7623	    Best performer: high accuracy, handles multicollinearity well
-Linear Regression (raw)	    7,142.56	0.6592	    Reliable baseline, but less precise
-Log-Transformed Linear Reg.	6,750.85	0.6955	    Price normalization improves fit
-Lasso Regression	          7,393.41	0.6348	    Over-regularized, weaker prediction performance
+Model	                           RMSE ($)	   R² Score	    Notes
+* Ridge Regression (α=100)	     5,965.13	   0.7623	    Best performer: high accuracy, handles multicollinearity well
+* Linear Regression (raw)	     7,142.56	   0.6592	    Reliable baseline, but less precise
+* Log-Transformed Linear Reg.	  6,750.85	   0.6955	    Price normalization improves fit
+* Lasso Regression	           7,393.41	   0.6348	    Over-regularized, weaker prediction performance
 
 Key Modeling Insights
 * Ridge Regression performed best by balancing accuracy and feature interpretability
