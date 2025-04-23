@@ -31,28 +31,28 @@ Key Modeling Insights
 Top 20 Influential Features
 Positive Influencers
 Feature	Coefficient	Interpretation
-year	              +0.382	      Newer cars command higher prices
-fuel_diesel	        +0.080	      Diesel vehicles retain more value
-type_truck	        +0.117	      Trucks have strong resale value
-type_pickup	        +0.059	      Pickups are in high demand
-transmission_manual	+0.054	      Enthusiast demand or lower maintenance
-type_convertible	  +0.048	      Lifestyle appeal increases resale value
+  * year	              +0.382	      Newer cars command higher prices, 
+  * fuel_diesel	        +0.080	      Diesel vehicles retain more value, 
+  * type_truck	        +0.117	      Trucks have strong resale value, 
+  * type_pickup	        +0.059	      Pickups are in high demand
+  * transmission_manual	+0.054	      Enthusiast demand or lower maintenance
+  * type_convertible	  +0.048	      Lifestyle appeal increases resale value
 
 Negative Influencers
 Feature	Coefficient	Interpretation
-odometer	              -0.296	      More mileage = lower price
-cylinders_4 cylinders	  -0.243	      Economy engine = base segment pricing
-cylinders_6 cylinders	  -0.173      	Mid-size engines in lower-demand segments
-drive_fwd	              -0.145	      FWD common in lower-value sedans
-title_status_rebuilt	  -0.143	      Rebuilt history drops value significantly
-title_status_salvage	  -0.109	      Major loss in resale value
-fuel_gas	              -0.092	      Default/common option, lower premium
-cylinders_other	        -0.089	      Rare configurations with uncertain demand
-condition_good	        -0.070	      Not as desirable as "excellent" condition
-cylinders_8 cylinders	  -0.068	      Big engines don’t always mean more value
-title_status_lien	      -0.054	      Financing complications reduce resale
-type_sedan	            -0.051	      Saturated market segment
-cylinders_5 cylinders	  -0.049	      Uncommon engines may reduce appeal
+   * odometer	              -0.296	      More mileage = lower price
+   * cylinders_4 cylinders	  -0.243	      Economy engine = base segment pricing
+   * cylinders_6 cylinders	  -0.173      	Mid-size engines in lower-demand segments
+   * drive_fwd	              -0.145	      FWD common in lower-value sedans
+   * title_status_rebuilt	  -0.143	      Rebuilt history drops value significantly
+   * title_status_salvage	  -0.109	      Major loss in resale value
+   * fuel_gas	              -0.092	      Default/common option, lower premium
+   * cylinders_other	        -0.089	      Rare configurations with uncertain demand
+   * condition_good	        -0.070	      Not as desirable as "excellent" condition
+   * cylinders_8 cylinders	  -0.068	      Big engines don’t always mean more value
+   * title_status_lien	      -0.054	      Financing complications reduce resale
+   * type_sedan	            -0.051	      Saturated market segment
+   * cylinders_5 cylinders	  -0.049	      Uncommon engines may reduce appeal
 
 Client Value Proposition
 This model helps dealerships:
