@@ -18,7 +18,7 @@ Model	                           RMSE ($)	   R² Score	    Notes
 * Ridge Regression (α=100)	     5,965.13	   0.7623	    Best performer: high accuracy, handles multicollinearity well
 * Linear Regression (raw)	     7,142.56	   0.6592	    Reliable baseline, but less precise
 * Log-Transformed Linear Reg.	  6,750.85	   0.6955	    Price normalization improves fit
-* Lasso Regression	           7,393.41	   0.6348	    Over-regularized, weaker prediction performance
+* Lasso Regression	           7,393.41	   0.6348	    Over-regularized, comparatively lowest prediction performance
 
 Key Modeling Insights
 * Ridge Regression performed best by balancing accuracy and feature interpretability
