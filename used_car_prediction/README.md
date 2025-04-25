@@ -1,4 +1,4 @@
-Business Understanding
+**Business Understanding**
 From a business perspective, the Used Car Dealership aims to identify the key factors that influence used car pricing. The primary goals are to:
 * Handle Market Competition: Set more competitive prices for inventory
 * Improve Decision-Making: Source high-demand vehicles using data
