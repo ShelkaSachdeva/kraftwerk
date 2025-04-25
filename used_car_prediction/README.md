@@ -47,7 +47,7 @@ Develop machine learning models that predict used car prices and surface key pri
 | `type_convertible`    | +0.048      | Lifestyle appeal increases resale value             |
 
 
-## ⬇️ Negative Influencers
+## Negative Influencers
 
 | Feature                 | Coefficient | Interpretation                                      |
 |--------------------------|-------------|-----------------------------------------------------|
