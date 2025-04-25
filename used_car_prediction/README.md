@@ -26,8 +26,8 @@ Develop machine learning models that predict used car prices and surface key pri
 **Key Modeling Insights**
 * Ridge Regression performed best by balancing accuracy and feature interpretability
 * Top predictive features:
-    * Year: Newer = higher price
-    * Odometer: More miles = lower price
+    * Year: More recent vehicles tend to fetch higher prices
+    * Odometer: Higher mileage typically leads to a lower resale value
     * Condition: Better condition boosts value significantly
     * Title status: Salvage, rebuilt, and lien titles drop value by up to $25,000
     * Vehicle type: Trucks and diesel vehicles retain value better than sedans or FWD models
