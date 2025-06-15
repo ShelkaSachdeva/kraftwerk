@@ -27,7 +27,7 @@ making it a goldmine for customer behavior insights.
 | `contact`       | Contact communication type: 'cellular', 'telephone'                                               |
 | `month`         | Last contact month: 'jan' to 'dec'                                                                |
 | `day_of_week`   | Last contact day of the week: 'mon' to 'fri'                                                      |
-| `duration`      | Last contact duration (in seconds). ⚠Strongly affects outcome — should be excluded from modeling |
+| `duration`      | Last contact duration (in seconds). Strongly affects outcome — should be excluded from modeling |
 
 ### Campaign History
 
@@ -72,7 +72,7 @@ making it a goldmine for customer behavior insights.
 
 | **Scenario**                          | **Recommended Model**     | **Why**                                                                 |
 |--------------------------------------|----------------------------|--------------------------------------------------------------------------|
-| Maximize campaign reach              | Logistic Regression        | High recall ensures more real "Yes" responders are caught                |
+| Maximize campaign reach              | Logistic Regression        | High recall ensures more real "Yes" responders are found                |
 | Prioritize precision (conservative)  | Decision Tree / SVM        | Fewer false positives if budget/call center capacity is limited          |
 | Prioritize speed & interpretability  | Decision Tree              | Fast training + easy to explain to business stakeholders                 |
 | Highest raw accuracy (with caution)  | KNN                        | Great overall accuracy but poor detection of converters (low recall)     |
@@ -82,7 +82,7 @@ making it a goldmine for customer behavior insights.
 
 | **Metric**       | **Value**             | **Meaning**                                                                                      |
 |------------------|------------------------|--------------------------------------------------------------------------------------------------|
-| **Accuracy**     | 0.83                   | Model correctly predicted 83% of total cases — but beware of imbalance bias.                    |
+| **Accuracy**     | 0.83                   | Model correctly predicted 83% of total cases but important to note imbalance bias.                    |
 | **Macro Avg**    | 0.66 / 0.75 / 0.68     | Equal weight to both classes — reveals that performance is stronger on majority class (Class 0). |
 | **Weighted Avg** | 0.88 / 0.83 / 0.85     | Accounts for class imbalance — heavily influenced by dominant Class 0 due to its higher support. |
 
