@@ -1,6 +1,10 @@
-This project analyzes a Portuguese bank's marketing campaign data collected between May 2008 and November 2010. 
-While the dataset doesn’t disclose the exact number of campaigns, it tracks both recent and past efforts, 
-making it a goldmine for customer behavior insights.
+This project analyzes a Portuguese bank's marketing campaign data collected between May 2008 and November 2010. The dataset does not represent a single marketing campaign, but rather a collection of multiple direct marketing campaigns conducted by a Portuguese bank between the specified period. However, the exact number of campaigns is not explicitly stated. The data captures both:
+
+- Current campaign activity (campaign variable),
+
+- Historical contact efforts (previous, pdays, and poutcome variables).
+
+So while we can infer that multiple campaigns occurred over the 2.5-year period, there is no precise count provided, therefore, these variables indicate that clients may have been contacted multiple times across different campaigns. 
 
 ### Ouput Variable
 
@@ -95,11 +99,13 @@ making it a goldmine for customer behavior insights.
 
 ### Key Insights
 
+- High recall: 65% of real subscribers were identified correctly.
+
 - The Logistic Regression model is conservative in predicting "Yes" — better at identifying definite "No"s.
 
 - But it still captures 900 true positives, which is ~65% of actual converters — that’s great for marketing.
 
-- However, the 1587 false positives (predicting someone will convert, but they won’t) may waste marketing resources.
+- False positives could lead to wasted marketing resources. The 1587 false positives (predicting someone will convert, but they won’t) may waste marketing resources.
 
   
 ### Top Positive Influencers (Features that Increase Probability of Subscription)
