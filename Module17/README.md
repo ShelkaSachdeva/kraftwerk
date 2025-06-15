@@ -2,9 +2,51 @@ This project analyzes a Portuguese bank's marketing campaign data collected betw
 While the dataset doesn’t disclose the exact number of campaigns, it tracks both recent and past efforts, 
 making it a goldmine for customer behavior insights.
 
+### Ouput Variable
+
 | **Feature** | **Description**                                           |
 |-------------|-----------------------------------------------------------|
 | `y`         | Has the client subscribed a term deposit? (`yes`/`no`)   |
+
+###  Bank Client Data
+
+| **Feature** | **Description**                                                                 |
+|-------------|---------------------------------------------------------------------------------|
+| `age`       | Client’s age (numeric)                                                         |
+| `job`       | Type of job (e.g. 'admin.', 'blue-collar', 'entrepreneur', etc.)               |
+| `marital`   | Marital status: 'divorced', 'married', 'single', 'unknown'                     |
+| `education` | Level of education (e.g. 'basic.4y', 'university.degree', 'unknown')            |
+| `default`   | Has credit in default? ('yes', 'no', 'unknown')                                 |
+| `housing`   | Has a housing loan? ('yes', 'no', 'unknown')                                    |
+| `loan`      | Has a personal loan? ('yes', 'no', 'unknown')                                   |
+
+### Last Contact of Current Campaign
+
+| **Feature**     | **Description**                                                                                   |
+|-----------------|---------------------------------------------------------------------------------------------------|
+| `contact`       | Contact communication type: 'cellular', 'telephone'                                               |
+| `month`         | Last contact month: 'jan' to 'dec'                                                                |
+| `day_of_week`   | Last contact day of the week: 'mon' to 'fri'                                                      |
+| `duration`      | Last contact duration (in seconds). ⚠Strongly affects outcome — should be excluded from modeling |
+
+### Campaign History
+
+| **Feature** | **Description**                                                                 |
+|-------------|---------------------------------------------------------------------------------|
+| `campaign`  | Number of contacts in this campaign (numeric)                                   |
+| `pdays`     | Days since client was last contacted in previous campaign (999 = never contacted) |
+| `previous`  | Number of contacts before this campaign                                         |
+| `poutcome`  | Outcome of previous campaign: 'failure', 'nonexistent', 'success'               |
+
+### Economic Indicators
+
+| **Feature**        | **Description**                                   |
+|--------------------|---------------------------------------------------|
+| `emp.var.rate`     | Employment variation rate (quarterly)            |
+| `cons.price.idx`   | Consumer price index (monthly)                   |
+| `cons.conf.idx`    | Consumer confidence index (monthly)              |
+| `euribor3m`        | Euribor 3-month rate (daily)                     |
+| `nr.employed`      | Number of employees (quarterly)                  |
 
 
 ### Model Comparison: Classification Report Summary
