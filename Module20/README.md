@@ -8,8 +8,7 @@
 
 This project focuses on predicting credit risk categories for loan applicants, aiming to classify loans as **High, Medium, or Low Risk**. 
 It leverages machine learning techniques, feature engineering, and handling class imbalance to support financial institutions in assessing
-lending risk effectively.
-
+lending risk effectively. There is a high probability that “High Risk” borrower is more likely to default.
 ---
 
 ## Data Overview
