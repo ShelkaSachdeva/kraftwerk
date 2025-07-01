@@ -24,8 +24,8 @@ lending risk effectively.
 ## Data Preprocessing
 
 - Applied Feature Engineering
-- Missing values handled via mode imputation
-- Dropped columns that were > 75 % null
+- Dropped columns that were greater than 85 % NULL
+- Missing values handled via mode imputation or Fill NA or -1
 - Outliers capped using IQR technique.
 - Feature scaling applied using StandardScaler.
 - Synthetic Minority Oversampling Technique (SMOTE) applied to balance the dataset.
@@ -81,7 +81,7 @@ The following 41 features were included for model building initially:
 Note: Plan is to further reduce these features using Logistic Regression - L1 Regularization as next steps.
 ---
 
-## Models Tested with SNOTE ((Synthetic Minority Over-sampling Technique)) and/or Class Weights
+## Models Tested with SMOTE (Synthetic Minority Over-sampling Technique)) and/or Class Weights
 
 - Logistic Regression
 - Random Forest
