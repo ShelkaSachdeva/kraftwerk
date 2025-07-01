@@ -26,12 +26,13 @@ lending risk effectively.
 - Applied Feature Engineering
 - Dropped columns that were greater than 85 % NULL
 - Missing values handled via mode imputation or Fill NA or -1
-- Outliers capped using IQR technique.
+- Used Logrithmic Transformation for features like income, installment, or interest rate to reduce skewness.
 - Feature scaling applied using StandardScaler.
-- Synthetic Minority Oversampling Technique (SMOTE) applied to balance the dataset.
 - Visualized data
 - Calculated Risk Catefory column using 5 different statuses from 'Loan Status' column
-- Performed One Hot Encoding and Label Encoding
+- Performed Encoding - One Hot Encoding and Label Encoding
+- Performed Feature Selection prior to Modeling.
+- Synthetic Minority Oversampling Technique (SMOTE) applied to handle imbalance of the dataset.
 ---
 
 ## Features Used
