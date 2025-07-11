@@ -24,16 +24,99 @@ This project applies machine learning models to borrower data—like income, spe
   - Optimize pricing strategies for medium-risk borrowers.
   - Comply with regulatory requirements using explainable models.
 
+---
+
+## Data Overview
+
+- **Dataset Size:** ~10 K records
+- **Features Used:** 41
+- **Target Variable:** `risk_category` (High, Medium, Low)
+
+---
+
+## Data Preprocessing
+
+- Applied extensive **feature engineering** to create meaningful new variables for modeling.
+- Dropped columns with **more than 85% missing values** to reduce noise and improve data quality.
+- Handled missing values using **mode imputation, fill NA, or -1 placeholders** depending on feature type and business logic.
+- Applied **logarithmic transformations** to features such as income, installment, and interest rate to reduce skewness and improve model performance.
+- Performed **feature scaling** using StandardScaler to normalize numeric variables.
+- Conducted **data visualization** to understand distributions and relationships among variables.
+- Calculated a new **Risk Category** column by consolidating five different statuses from the original 'Loan Status' field.
+- Applied both **One-Hot Encoding** and **Label Encoding** to convert categorical variables into numerical format suitable for machine learning.
+- Performed **feature selection** to retain the most relevant variables for modeling.
+- Addressed dataset imbalance using **Synthetic Minority Oversampling Technique (SMOTE)** to improve model sensitivity to minority classes.
+
+
 ## Dataset Overview
 
+Dataset has following features and additionally feature engineering created additional features
+- balance
+- balance_to_loan_ratio
+- paid_pct
+- paid_total
+- paid_principal
+- paid_interest
+- log_installment
+- installment
+- annual_income
+- total_credit_limit
+- loan_amount
+- total_credit_utilized
+- installment_to_income
+- debt_to_income
+- total_debit_limit
+- paid_late_fees
+- log_annual_income
+- log_interest_rate
+- credit_utilization_rate
+- interest_rate
+- total_credit_lines
+- num_satisfactory_accounts
+- open_credit_lines
+- months_since_last_credit_inquiry
+- num_cc_carrying_balance
+- num_total_cc_accounts
+- inquiries_last_12m
+- credit_history_length
+- num_open_cc_accounts
+- earliest_credit_line
+- accounts_opened_24m
+- num_active_debit_accounts
+- account_never_delinq_percent
+- emp_length
+- months_since_last_delinq
+- months_since_90d_late
+- current_installment_accounts
+- issue_month_Jan-2018
+- num_mort_accounts
+- term
+
+### Feature Engineering
+- installment_to_income
+- credit_utilization_rate
+- credit_history_length
+- high_utilization_flag
+- verified_income_flag
+- delinq_ratio
+- balance_to_loan_ratio
+- paid_pct
+
+
 Key features used for modeling include:
-- Debt-to-Income Ratio
-- Interest Rate
-- Credit Utilization Rate
-- Total Credit Used and Limits
-- Annual Income
-- Public Records (Bankruptcies, Collections, Historical Failures to Pay)
-- Loan Terms (amount, duration)
+- balance_to_loan_ratio
+- interest_rate
+- log_interest_rate
+- total_credit_utilized
+- debt_to_income
+- credit_utilization_rate
+- total_credit_limit
+- annual_income
+- total_debit_limit
+- months_since_last_credit_inquiry
+- public_record_bankrupt
+- num_collections_last_12m
+- num_historical_failed_to_pay
 
 ---
 
