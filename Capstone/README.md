@@ -93,8 +93,10 @@ Dataset has following features and additionally feature engineering created addi
 - issue_month_Jan-2018
 - num_mort_accounts
 - term
+  
 ---
-### Feature Engineering
+
+## Feature Engineering
 - installment_to_income
 - credit_utilization_rate
 - credit_history_length
@@ -105,7 +107,8 @@ Dataset has following features and additionally feature engineering created addi
 - paid_pct
 
 ---
-Key features used for modeling include:
+
+## Key features used for modeling include:
 - balance_to_loan_ratio
 - interest_rate
 - log_interest_rate
@@ -134,7 +137,8 @@ Key features used for modeling include:
   - Threshold Grid Search
   - Hyperparameter Tuning
 ---
-**Best Model:**  
+
+## **Best Model:**
 Ensemble pipeline (M9) with:
 - Macro F1 ~0.91
 - High recall and precision for high-risk borrowers
