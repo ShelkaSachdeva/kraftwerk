@@ -1,29 +1,27 @@
-NEW 
-
+---
 ## Overview
 
 This project predicts loan default risk to help financial institutions make smarter lending decisions. Using advanced machine learning techniques, it classifies borrowers into three risk tiers—Low, Medium, 
 and High—so the business can reduce bad loans, protect profits, and serve customers more effectively.
-
+---
 ## Business Problem
 
 Predicting loan defaults is a critical challenge for banks and financial institutions, as it directly impacts profitability, risk management, and the ability to offer future credit. 
 When too many borrowers fail to repay their loans, lenders face financial losses, reduced liquidity, and increased lending restrictions. These defaults can also damage investor confidence and weaken customer trust.
-
+---
 ## **Goal:** Identify borrowers likely to default that are in 'High Risk' category before loan approval.
 
 This project applies machine learning models to borrower data—like income, spending, credit behavior etc. to classify loan applicants as:
 - Low Risk 
 - Medium Risk 
 - High risk
-    
+---    
 ## **Business Value:**
 - This data-driven approach helps lenders reduce losses, improve efficiency, and ensure fair, consistent, and inclusive lending decisions.
   - Reduce financial losses from defaults.
   - Approve more good loans confidently.
   - Optimize pricing strategies for medium-risk borrowers.
   - Comply with regulatory requirements using explainable models.
-
 ---
 
 ## Data Overview
@@ -91,7 +89,7 @@ Dataset has following features and additionally feature engineering created addi
 - issue_month_Jan-2018
 - num_mort_accounts
 - term
-
+---
 ### Feature Engineering
 - installment_to_income
 - credit_utilization_rate
@@ -102,7 +100,7 @@ Dataset has following features and additionally feature engineering created addi
 - balance_to_loan_ratio
 - paid_pct
 
-
+---
 Key features used for modeling include:
 - balance_to_loan_ratio
 - interest_rate
@@ -131,7 +129,7 @@ Key features used for modeling include:
   - Class balancing (SMOTE)
   - Threshold Grid Search
   - Hyperparameter Tuning
-
+---
 **Best Model:**  
 Ensemble pipeline (M9) with:
 - Macro F1 ~0.91
@@ -156,7 +154,6 @@ Ensemble pipeline (M9) with:
 | M8 – Full Ensemble Pipeline: XGBoost + Keras + SMOTE + Class Weights + Grid Search     | 0.95 | 0.91 | 0.79 | 1.00 | 0.93 |
 | M9 – Full Ensemble Pipeline: XGB + Keras + SMOTE + Grid Search + Hyperparameter Tuning **(BEST MODEL)**  | 0.96 | 0.91 | 0.79 | 1.00 | 0.93 |
 
-
 ---
 
 ## Business Interpretation of Risk
@@ -171,9 +168,11 @@ Ensemble pipeline (M9) with:
 
 ## Communication to Stakeholders
 
-Model results are communicated as:
-- **Risk Scores** (0–100)
-- **Probability of Default** (e.g. “17% chance of default”)
-- **Risk Tiers** (Low, Medium, High)
-- **Key Factors Driving Risk** via SHAP explanations
-- **Actionable Recommendations** for lending strategies
+Model insights are presented in business-friendly formats to support decision-making:
+
+- **Risk Scores** expressed on a 0–100 scale for easy interpretation.
+- **Probability of Default**, providing a clear percentage risk estimate (e.g. “17% chance of default”).
+- **Risk Tiers** categorizing borrowers into Low, Medium, or High risk for streamlined policy decisions.
+- **Key Drivers of Risk**, explained using SHAP values to show which factors influence individual predictions.
+- **Actionable Recommendations**, offering practical next steps such as adjusting loan amounts, interest rates, or collateral requirements based on predicted risk.
+
