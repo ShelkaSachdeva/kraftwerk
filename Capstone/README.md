@@ -48,6 +48,7 @@ This project applies machine learning models to borrower data—like income, spe
 - Performed **feature selection** to retain the most relevant variables for modeling.
 - Addressed dataset imbalance using **Synthetic Minority Oversampling Technique (SMOTE)** to improve model sensitivity to minority classes.
 
+---    
 
 ## Dataset Overview
 
