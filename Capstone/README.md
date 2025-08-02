@@ -33,6 +33,9 @@ This project applies machine learning models to borrower data—like income, spe
 - **Features Used:** 41
 - **Target Variable:** `risk_category` (High, Medium, Low)
 
+The dataset was heavily imbalanced, with significantly more low-risk loans than high-risk ones. 
+To address this, 4,000 rows were added to augment the high & medium risk category rows, improving the overall class balance and ensuring a more reliable model performance during training and evaluation.
+
 ---
 
 ## Data Preprocessing
